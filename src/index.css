@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+    width: 400px;
+    background: beige;
+    border: grey;
+    box-shadow: 1px 1px 6px 6px grey;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+
+h4, h3{
+  margin-left: 25px;
+  margin-left: 25px;
+  color: rosybrown;
+  padding: 0px;
+  margin-bottom: 1px;
+
+}
+
+
+.income-expense-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px grey;
+  padding: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.transction-list  li {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px gray;
+  margin-top: 10px;
+  padding:  10px 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+form  input {
+  width: 85%;
+  padding: 10px 0;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.header{
+  color: darkgoldenrod;
+  background: darkblue;
+  margin: 0px;
+  padding: 10px;
+  text-align: center;
+}
+
+input[type="submit"]{
+  color: darkgoldenrod;
+  background: darkblue;
+  margin-bottom: 25px;
+
+}
+
+.income{
+  color: green;
+    text-align: center;
+    font-size: 18px;
+}
+
+.expense{
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.balance{
+  color: brown;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
