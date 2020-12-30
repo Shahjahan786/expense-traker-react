@@ -18,7 +18,7 @@ import { TransContext } from "./TransContext"
                    {
                         transactions.map((transOb, id) =>{
                                 return (
-                                <li key={id}><span><button onClick={()=>{removeItem(transOb.id)}}>X</button> {transOb.desc}</span> <span>Rs. {transOb.amount}</span></li>
+                                <li key={id}><span><button onClick={()=>{removeItem(transOb.id)}}>X</button> {transOb.desc}</span> <span className={transOb.amount > 0  ? "income" : "expense"}>Rs. {transOb.amount}</span></li>
                                 )
                         })                           
                    } 
