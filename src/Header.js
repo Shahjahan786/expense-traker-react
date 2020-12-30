@@ -1,6 +1,15 @@
+import { Typography, Toolbar, AppBar} from '@material-ui/core';
  const Header = () => {
     return (
-            <h2 className="header">Expense Tracker</h2>
+        <AppBar position="static">
+        <Toolbar>
+          
+          <Typography variant="h6">
+            Expanse Tracker
+          </Typography>
+        
+        </Toolbar>
+      </AppBar>
         )
 }
 
