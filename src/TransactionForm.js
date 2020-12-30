@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import { TransContext } from "./TransContext";
-import ListSubheader from '@material-ui/core/ListSubheader';
 import TextField from '@material-ui/core/TextField';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
-import Divider from '@material-ui/core/Divider';
+import PlaylistAddIcon from '@material-ui/icons/PlaylistAdd';
+import Chip from '@material-ui/core/Chip';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,8 +51,12 @@ const TransactionForm = () => {
 
     return (
         <form onSubmit={handleSubmit} className={classes.root}>
-            <ListSubheader>Add New Transaction</ListSubheader>
-            <Divider/>
+            <Chip
+                                label="Add New Transaction"
+                                color="primary"
+                                variant="outlined"
+                                style={{ margin: '10px auto' }}
+                                icon={<PlaylistAddIcon />} />
 
             <TextField
                 required

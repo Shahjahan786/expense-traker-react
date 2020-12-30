@@ -10,7 +10,9 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import DeleteIcon from '@material-ui/icons/Delete';
 import CallReceivedIcon from '@material-ui/icons/CallReceived';
 import CallMadeIcon from '@material-ui/icons/CallMade';
-import Divider from '@material-ui/core/Divider';
+import ImportExportIcon from '@material-ui/icons/ImportExport';
+import Chip from '@material-ui/core/Chip';
+
 
 
 
@@ -27,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
                 marginTop: '10px',
                 padding: '10px 5px',
 
-               
+
         }
 }));
 
@@ -43,8 +45,13 @@ const TransItems = () => {
         }
 
         return (
-                <List subheader={<ListSubheader>Transactions</ListSubheader>} className={classes.root}>
-                        <Divider />
+                <List className={classes.root}>
+                        <Chip
+                                label="Transactions"
+                                color="primary"
+                                variant="outlined"
+                                style={{ margin: '10px auto' }}
+                                icon={<ImportExportIcon />} />
                         {
                                 transactions.map((transOb, id) => {
                                         return (
@@ -54,18 +61,18 @@ const TransItems = () => {
                                                         </ListItemIcon>
                                                         <ListItemText id="switch-list-label-wifi" primary={transOb.desc} />
 
-                                                
+
                                                         <ListItemSecondaryAction>
-                                                        <ListItemIcon>
-                                                        {transOb.amount > 0 ?
-                                                                <CallReceivedIcon style={{ color:"green" }}/>
-                                                                :
-                                                                <CallMadeIcon  style={{ color:"red" }}/>
+                                                                <ListItemIcon>
+                                                                        {transOb.amount > 0 ?
+                                                                                <CallReceivedIcon style={{ color: "green" }} />
+                                                                                :
+                                                                                <CallMadeIcon style={{ color: "red" }} />
 
-                                                        }
-                                                        </ListItemIcon>
+                                                                        }
+                                                                </ListItemIcon>
 
-                                                         <span className={transOb.amount > 0 ? "income" : "expense"}>Rs. {transOb.amount}</span>
+                                                                <span className={transOb.amount > 0 ? "income" : "expense"}>Rs. {transOb.amount}</span>
                                                         </ListItemSecondaryAction>
                                                 </ListItem>
                                         )
