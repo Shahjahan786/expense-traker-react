@@ -7,6 +7,7 @@ import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import SaveIcon from '@material-ui/icons/Save';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -50,6 +51,7 @@ const TransactionForm = () => {
     return (
         <form onSubmit={handleSubmit} className={classes.root}>
             <ListSubheader>Add New Transaction</ListSubheader>
+            <Divider/>
 
             <TextField
                 required

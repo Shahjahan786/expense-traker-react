@@ -10,6 +10,7 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import DeleteIcon from '@material-ui/icons/Delete';
 import CallReceivedIcon from '@material-ui/icons/CallReceived';
 import CallMadeIcon from '@material-ui/icons/CallMade';
+import Divider from '@material-ui/core/Divider';
 
 
 
@@ -43,6 +44,7 @@ const TransItems = () => {
 
         return (
                 <List subheader={<ListSubheader>Transactions</ListSubheader>} className={classes.root}>
+                        <Divider />
                         {
                                 transactions.map((transOb, id) => {
                                         return (
