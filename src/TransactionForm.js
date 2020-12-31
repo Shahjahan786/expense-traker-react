@@ -52,7 +52,7 @@ const TransactionForm = () => {
     return (
         <form onSubmit={handleSubmit} className={classes.root}>
             <Chip
-                                label="Add New Transaction"
+                                label="ADD NEW TRANSACTION"
                                 color="primary"
                                 variant="outlined"
                                 style={{ margin: '10px auto' }}
@@ -72,6 +72,7 @@ const TransactionForm = () => {
                 required
                 label="Enter Amount"
                 id="amount"
+                type="number"
                 className={clsx(classes.margin, classes.textField)}
                 InputProps={{
                     startAdornment: <InputAdornment position="start">Rs. </InputAdornment>,

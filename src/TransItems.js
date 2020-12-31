@@ -46,7 +46,7 @@ const TransItems = () => {
         return (
                 <List className={classes.root}>
                         <Chip
-                                label="Transactions"
+                                label="TTRANSACTIONS"
                                 color="primary"
                                 variant="outlined"
                                 style={{ margin: '10px auto' }}
